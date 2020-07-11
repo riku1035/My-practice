@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+  color: blue;
+  user-select:none;
+  cursor:pointer;
+}
+
+#toggle-btn {
+  float: right;
+  margin-right: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#count-number {
+  font-size: 50px;
+}
+
