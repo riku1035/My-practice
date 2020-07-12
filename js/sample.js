@@ -4,6 +4,8 @@
   const text = document.querySelector("textarea");
   const toggleBtn = document.getElementById("toggle-btn");
   const h1 = document.querySelector("h1");
+  const useBtn = document.getElementById("use-btn");
+  const useMethod = document.getElementById("use-method");
 
   text.focus();
 
@@ -26,7 +28,7 @@
       const getEngWord = text.value.split(/[\n\s]/g).filter((v) => v).length;
       countNumber.textContent = getEngWord;
     } else {
-      const getWord = text.value.trim().length;
+      const getWord = text.value.replace(/[\n\s]/g, "").length;
       countNumber.textContent = getWord;
     }
   });
@@ -34,6 +36,13 @@
   h1.addEventListener("click", () => {
     reset();
     text.focus();
+  });
+
+  useBtn.addEventListener("mouseover", () => {
+    useMethod.style.visibility = "visible";
+  });
+  useBtn.addEventListener("mouseleave", () => {
+    useMethod.style.visibility = "hidden";
   });
 
   const reset = function () {
