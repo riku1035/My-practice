@@ -3,12 +3,22 @@ h1 {
   margin-top: 50px;
   font-weight: bold;
   color: blue;
-  user-select:none;
-  cursor:pointer;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+#use-btn {
+  margin-left: 100px;
+  cursor: pointer;
+  user-select: none;
 }
 
 #toggle-btn {
-  float: right;
   margin-right: 100px;
   cursor: pointer;
   user-select: none;
@@ -23,3 +33,19 @@ main {
   font-size: 50px;
 }
 
+#count-space {
+  padding: 0 2px;
+}
+
+#use-method {
+  position: absolute;
+  left: 20%;
+  top: 300px;
+  transform: translate(-50%, -50%);
+  background: #ccc;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  visibility: hidden;
+}
