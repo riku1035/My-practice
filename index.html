@@ -15,14 +15,38 @@
   <body>
     <header>
       <h1>文字数カウンター</h1>
-      <button type="button" class="btn btn-success" id="toggle-btn">
-        切り替え
-      </button>
+      <div class="btns">
+        <button type="button" class="btn btn-warning" id="use-btn">
+          使い方
+        </button>
+        <button type="button" class="btn btn-success" id="toggle-btn">
+          切り替え
+        </button>
+      </div>
     </header>
     <main>
-      <div id="count-number">0</div>
-      <textarea id="count-space" cols="125" rows="40"></textarea>
+      <div class="container">
+        <div class="row">
+          <div id="count-number" class="col-12">0</div>
+          <textarea
+            id="count-space"
+            cols="125"
+            rows="40"
+            class="col-12"
+          ></textarea>
+        </div>
+      </div>
     </main>
+    <div id="use-method">
+      <p>テキストエリアの中に文字を入力すると文字数が表示されます。</p>
+      <p>
+        右の切り替えをクリックすると英単語カウンターに切り替わり英単語の数がカウントされます。
+      </p>
+      <p>
+        文字数(英単語)カウンターの部分をクリックすると中のテキストがリセットされます。
+      </p>
+    </div>
     <script type="text/javascript" src="js/sample.js"></script>
   </body>
 </html>
+
